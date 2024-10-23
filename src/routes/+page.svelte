@@ -4,7 +4,7 @@
 	import Layout from './+layout.svelte';
 	const silsues = ['rodang', 'hongsam', 'candy', 'doduck', 'gom', 'light'];
 	const silsuesKR = ['경로당', '홍삼', '캔디', '킹도둑', '곰준식', '빛'];
-	const silsueColor = [''];
+	const silsueColor = ['#992D22', '#A84300', '#C27C0E', '#1F8B4C', '#206694', '#91258B'];
 
 	$: isSilsueData = false;
 	let silsueData = [];
@@ -36,7 +36,8 @@
 				<img
 					src="/profile/{i + 1}-{silsue}.png"
 					alt="silsue"
-					class="w-32 h-32 object-cover rounded-full border-2 border-gray-400 cursor-pointer hover:w-36 hover:h-36 transition-all"
+					class="w-32 h-32 object-cover rounded-full border-2 cursor-pointer hover:w-36 hover:h-36 transition-all"
+					style="border-color: {silsueColor[i]};"
 					on:click={() => showRelationship(silsue, i)}
 				/>
 			{/each}
@@ -46,9 +47,15 @@
 			{#if isSilsueData}
 				{#each silsueData as data, i}
 					{#if nowSelectSilsueIdx !== i}
-						<div class="max-w-[400px] h-fit bg-gray-200 px-5 py-3 rounded-lg">
-							<div class="font-bold mb-3 text-lg">{i + 1} {silsuesKR[i]}</div>
-							<div>
+						<div
+							class="max-w-[400px] h-fit border-2 px-5 py-3 rounded-lg"
+							style="border-color: {silsueColor[i]};"
+						>
+							<div class="font-bold mb-3 text-lg" style="color: {silsueColor[i]};">
+								{i + 1}
+								{silsuesKR[i]}
+							</div>
+							<div class="text-sm">
 								{data}
 							</div>
 						</div>
