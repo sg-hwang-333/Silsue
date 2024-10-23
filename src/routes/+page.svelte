@@ -4,6 +4,7 @@
 	import Layout from './+layout.svelte';
 	const silsues = ['rodang', 'hongsam', 'candy', 'doduck', 'gom', 'light'];
 	const silsuesKR = ['경로당', '홍삼', '캔디', '킹도둑', '곰준식', '빛'];
+	const silsueColor = [''];
 
 	$: isSilsueData = false;
 	let silsueData = [];
@@ -28,7 +29,7 @@
 	</header>
 
 	<main class="my-20">
-		<div class="flex justify-center items-center gap-4">
+		<div class="flex justify-center items-center flex-wrap gap-4">
 			{#each silsues as silsue, i}
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
