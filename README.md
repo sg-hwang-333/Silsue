@@ -1,38 +1,25 @@
-# create-svelte
+# 실수들 소개
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## 실수 1 : 경로당  
+> 파티피플 경로당 &nbsp;&nbsp;  
+> ```KING```  
 
-## Creating a project
+## 실수 2 : 홍삼  
+> 칠흑의 개발자 &nbsp;&nbsp;  
+> ```이히히```  
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 실수 3 : 캔디  
+> 핵폭탄 &nbsp;&nbsp;  
+> ```내가뽀롤가```  
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## 실수 4 : 킹도둑  
+> 와삭교 교주 &nbsp;&nbsp;  
+> ```리보리보하리보```  
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## 실수 5 : 곰준식  
+> 사드 약혼자 &nbsp;&nbsp;  
+> ```곰```  
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## 실수 6 : 빛  
+> 개봉의 전설 &nbsp;&nbsp;  
+> ```메롱```  
